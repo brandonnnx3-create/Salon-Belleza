@@ -328,6 +328,35 @@
     </div>
   </footer>
 
+  <!-- ===== ASISTENTE (respuestas automáticas a preguntas frecuentes; editá las respuestas en script.js → FAQ) ===== -->
+  <div class="chat" id="chat">
+    <button class="chat__launcher" id="chat-launcher" aria-expanded="false" aria-controls="chat-panel">
+      <span class="chat__avatar" aria-hidden="true">B</span>
+      <span class="chat__launcher-txt"><strong>Preguntanos</strong><span>Asistente del salón</span></span>
+    </button>
+
+    <section class="chat__panel" id="chat-panel" role="dialog" aria-label="Asistente del salón" hidden>
+      <header class="chat__head">
+        <span class="chat__avatar" aria-hidden="true">B</span>
+        <div class="chat__title">
+          <strong>Asistente de Belleza</strong>
+          <span><i class="chat__dot"></i>Respuestas automáticas</span>
+        </div>
+        <button class="chat__close" id="chat-close" aria-label="Cerrar asistente">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="chat__log" id="chat-log" aria-live="polite"></div>
+      <div class="chat__chips" id="chat-chips"></div>
+      <form class="chat__form" id="chat-form">
+        <input type="text" id="chat-input" placeholder="Escribí tu pregunta…" autocomplete="off" aria-label="Tu pregunta">
+        <button type="submit" aria-label="Enviar">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </section>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

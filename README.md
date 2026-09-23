@@ -17,6 +17,7 @@ HTML, CSS y JavaScript puros, sin dependencias ni proceso de build. Para verlo, 
 | Dirección, teléfono, email, horarios | `index.html`, sección `#contacto` |
 | Mapa | Google Maps → Compartir → Insertar un mapa, y pegá el `<iframe>` en lugar del placeholder |
 | Instagram / Facebook | Links en `#galeria` y `#contacto` |
+| Respuestas del asistente | `script.js` → `FAQ` (palabras clave y respuesta de cada pregunta) |
 | Colores y tipografías | `styles.css` → variables en `:root` |
 
 Mientras `WHATSAPP_NUMBER` esté vacío, el formulario valida los campos pero no envía nada y le muestra al visitante un aviso.
